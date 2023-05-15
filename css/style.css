@@ -3,6 +3,7 @@
 */
 body, html, #home {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -42,10 +43,11 @@ nav.navbar-transparente {
     margin: 12px 9px;
 }
 
-/* 
-    ********** CAPA **********
-*/
 
+
+/* 
+    ********** ESTRUTURA DA SEÇÃO CAPA **********
+*/
 .capa {
     text-align: center;
 }
@@ -78,9 +80,8 @@ nav.navbar-transparente {
     color: black;
 }
 
-
 /* 
-    ********** CAPA | TAMANHO DA FONTE **********
+    ********** ESTRUTURA DA SEÇÃO CAPA | TIPO DA FONTE (TIPOGRAFIA) **********
 */
 h1 {
     font-weight: 900;
@@ -89,9 +90,72 @@ h1 {
     color: white;
 }
 
+
+
 /* 
-    ********** CAPA | TAMANHO DA FONTE | MEDIA QUERIES **********
+    ********** ESTRUTURA DA SEÇÃO CONTEÚDOS **********
+ */
+ #servicos {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ .albuns {
+    padding: 10px 0px;
+}
+
+#servicos h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+
+
+
+/*
+    ********** ESTRUTURA DA SEÇÃO RECURSOS **********
 */
+#recursos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+#recursos h2 {
+    color: white;
+}
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+#recursos p {
+    color: white;
+}
+
+.rotacionar {
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+
+
+/* 
+   ********** MEDIA QUERIES **********
+*/
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .btn-custom {
